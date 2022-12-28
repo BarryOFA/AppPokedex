@@ -1,0 +1,72 @@
+﻿@model AppPokedex.Models.pokemon
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Eliminar</h2>
+
+<h3>¿Estás seguro que quieres eliminar este pokemon?</h3>
+<div>
+    <h4>pokemon</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Altura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Altura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.genero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.genero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCreacion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
