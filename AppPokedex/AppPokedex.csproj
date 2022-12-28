@@ -282,6 +282,7 @@
     <Content Include="Views\Home\Delete.cshtml" />
     <Content Include="Views\Home\Read.cshtml" />
     <Content Include="Views\Home\Update.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

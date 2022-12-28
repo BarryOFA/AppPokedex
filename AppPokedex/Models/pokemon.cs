@@ -29,14 +29,12 @@ namespace AppPokedex.Models
         [DataType(DataType.Date)]
         public DateTime FechaCreacion { get; set; }
 
-        public pokemon(string nombre, string tipo, int peso, float altura, bool genero, DateTime fechaCreacion)
+        public pokemon(string nombre, string tipo, int peso)
         {
             Nombre = nombre;
             Tipo = tipo;
             Peso = peso;
-            Altura = altura;
-            this.genero = genero;
-            FechaCreacion = fechaCreacion;
+
         }
     }
 }
